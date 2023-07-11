@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <link rel="stylesheet" href="./assets/css/membros.css">
     <title>Membros</title>
 </head>
 <body>
-    <header>
-        <h1>Membros da Banda</h1>
+    <header class="flex-row-space-between">
+        <h1 onclick="homePage()">Arctic Monkeys</h1>
+        <h3>Membros da Banda</h3>
     </header>
 
     <main>
@@ -18,27 +19,36 @@
             <div class="card" style="width: 18rem;">
                 <img src="./assets/imgs/AlexTurner.jpg" class="card-img-top" alt="AlexTurner">
                 <div class="card-body">
-                <h3 class="card-title">Alex Turner</h3>
-                <p class="card-text">Alexander David Turner (Sheffield, 6 de janeiro de 1986) é um cantor, compositor e músico britânico. Ele é o fundador e atual vocalista da banda de indie rock Arctic Monkeys.</p>
-                <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    <h3 class="card-title">Alex Turner</h3>
+                    <p class="card-text">Alexander David Turner (Sheffield, 6 de janeiro de 1986) é um cantor, compositor e músico britânico. Ele é o fundador e atual vocalista da banda de indie rock Arctic Monkeys.</p>
+                </div>
+
+                <div class="card-button">
+                    <a href="#" class="btn btn-secondary">Mais Informações</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="./assets/imgs/JamieCook.jpg" class="card-img-top" alt="JamieCook">
                 <div class="card-body">
-                <h3 class="card-title">Jamie Cook</h3>
-                <p class="card-text">Jamie "Cookie" Cook, nascido em 8 de Julho de 1985, é um guitarrista e compositor britânico. É o segundo mais velho e o principal guitarrista da banda Arctic Monkeys, de Sheffield.</p>
-                <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    <h3 class="card-title">Jamie Cook</h3>
+                    <p class="card-text">Jamie "Cookie" Cook, nascido em 8 de Julho de 1985, é um guitarrista e compositor britânico. É o segundo mais velho e o principal guitarrista da banda Arctic Monkeys, de Sheffield.</p>                    
+                </div>
+
+                <div class="card-button">
+                    <a href="#" class="btn btn-secondary">Mais Informações</a>
                 </div>
             </div>
 
             <div class="card" style="width: 18rem;">
                 <img src="./assets/imgs/NickO'Malley.jpg" class="card-img-top" alt="NickO'Malley">
-                <div class="card-body">
-                <h3 class="card-title">Nick O'Malley</h3>
-                <p class="card-text">Nick O'Malley, nascido em 5 de julho de 1985, é o baixista da banda britânica Arctic Monkeys.</p>
-                <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    <div class="card-body">
+                    <h3 class="card-title">Nick O'Malley</h3>
+                    <p class="card-text">Nick O'Malley, nascido em 5 de julho de 1985, é o baixista da banda britânica Arctic Monkeys.</p>
+                </div>
+
+                <div class="card-button">
+                    <a href="#" class="btn btn-secondary">Mais Informações</a>
                 </div>
             </div>
 
@@ -47,7 +57,10 @@
                 <div class="card-body">
                 <h3 class="card-title">Matthew Helders</h3>
                 <p class="card-text">Matthew Helders, nascido em 7 de Maio de 1986, é o baterista da banda de rock britânica Arctic Monkeys.</p>
-                <a href="#" class="btn btn-secondary">Mais Informações</a>
+                </div>
+
+                <div class="card-button">
+                    <a href="#" class="btn btn-secondary">Mais Informações</a>
                 </div>
             </div>
         </div>
@@ -55,11 +68,16 @@
 
     <footer>
         <div class="fcolunas">
-            <a href="./tela_inicial.html">Página inicial</a>
+            <a class="btn btn-dark" href="./tela_inicial.html">Página inicial</a>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        function homePage() {
+            window.location.href='./tela_inicial.html';
+        }
+    </script>
 </body>
 </html>
 

@@ -9,14 +9,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* TAGS DE USO GERAL */
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* TAGS CABEÇALHO */
 
 header{
+    position: sticky;
+    top: 0px;
     background-color: #111111;
     text-align: center;
-    font-size: 40px;
     color: #ffffff;
-    padding: 40px;
+    padding: 30px;
+    z-index: 2;
 }
 
 .cards{
@@ -31,11 +53,16 @@ main{
     padding: 100px;
 }
 
-.navbar a{
+.alert {
+    display: none;
+}
+
+.navbar a, .navbar p{
     color: #ffffff;
     font-size: 20px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .dropdown-menu{
@@ -62,26 +89,21 @@ ul li a{
 .btn{
     background-color: #2e2c2c;
 }
+
 /* TAGS DO RODAPÉ */
 
 footer{
     background-color: #111111;
     color: #ffffff;
     text-align: center;
-    padding: 15px;
+    padding: 30px;
 }
 
-.fcolunas{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.copy {
+    color: #2e2c2c;
+    font-size: 14px;
 }
 
-.fcolunas a{
+.btn-group a{
     font-size: 10px;
-}   
-
-.fcolunas h5{
-    text-align: center;
-    align-items: center;
 }

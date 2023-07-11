@@ -19,25 +19,28 @@ header{
     padding: 40px;
 }
 
-.navbar a{
-    color: #000000;
-    font-size: 20px;
-}
-
 .cards{
     display: flex;
     justify-content: space-around;
     padding: 10px;
 }
 
-/* TAGS DO CORPO */
+/* === TAGS DO CORPO === */
 main{
     background-color: #2e2c2c;
-    padding: 106px;
+    padding: 100px;
 }
 
-main div{
-    padding: 0 0 30px;
+.navbar a{
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu{
+    background-color: #2e2c2c;
+    color: #ffffff;
 }
 
 main nav{
@@ -56,6 +59,9 @@ ul li a{
     text-align: center;
 }
 
+.btn{
+    background-color: #2e2c2c;
+}
 /* TAGS DO RODAPÉ */
 
 footer{
@@ -64,8 +70,18 @@ footer{
     text-align: center;
     padding: 15px;
 }
-footer div{
+
+.fcolunas{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.fcolunas a{
+    font-size: 10px;
+}   
+
+.fcolunas h5{
+    text-align: center;
     align-items: center;
 }

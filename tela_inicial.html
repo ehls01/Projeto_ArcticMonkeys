@@ -5,45 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
     <title>Página Inicial</title>
 </head>
 <body>
     <header>
-        <!-- A grey horizontal navbar that becomes vertical on small screens -->
-        <nav class="navbar navbar-expand-sm bg-light">
-
-        <div class="container-fluid">
-            <!-- Links -->
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="./tela_apresentacao.html">Apresentação</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./tela_membros.html">Membros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./tela_historia.html">História</a>
-            </li>
-            </ul>
-        </div>
-
-        </nav>
+        <h1>Arctic Monkeys</h1>
     </header>
 
     <main>
-        <div class="integrantes">
-            <p>Derick Jesiel</p>
-            <p>Emanoel Heron</p>
-            <p>Pedro Henrique</p>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tela_apresentacao.html">Apresentação</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./tela_historia.html">História</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Membros
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="tela_membros.html">Todos os Membros</a></li>
+                      <li><a class="dropdown-item" href="#">Alex Turner</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">Jamie Cook</a></li>
+                      <li><a class="dropdown-item" href="#">Nick O'Malley</a></li>
+                      <li><a class="dropdown-item" href="#">Matthew Helders</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>          
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/imgs/show1.webp" alt="Los Angeles" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imgs/show2.jpg" alt="Chicago" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imgs/show3.jpg" alt="New York" class="d-block w-100">
+            </div>
+            </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
     </main>
 
     <footer>
         <div class="fcolunas">
-            <p>10/07/2023</p>
+            <div class="btn-group-vertical" role="group" aria-label="Exemplo de grupo de botões">
+                <h1>Fontes</h1>
+                <a href="https://pt.wikipedia.org/wiki/Arctic_Monkeys#" class="btn btn-secondary">Wikipedia</a>
+                <a href="https://images.google.com/" class="btn btn-secondary">Google Imagens</a>
+                <a href="https://www.youtube.com/" class="btn btn-secondary">Youtube</a>
+            </div>
+            <div class="btn-group-vertical" role="group" aria-label="Exemplo de grupo de botões">
+                <h1>Integrantes</h1>
+                <a href="https://www.instagram.com/derickcarvalhoo/" class="btn btn-secondary">Derick Jesiel</a>
+                <a href="https://www.instagram.com/ehls_/" class="btn btn-secondary">Emanoel Heron</a>
+                <a href="https://www.instagram.com/pedro_1henrique_soares/" class="btn btn-secondary">Pedro Henrique</a>
+            </div>
+            
         </div>
-    </footer>
+    </footer>   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- 
+Alertas
+Botões •
+Grupos de botões •
+Card •
+Carousel •
+Collapse 
+Dropdowns •
+Formulários 
+Grupos de input 
+Navs 
+Barras de navegação •
+-->

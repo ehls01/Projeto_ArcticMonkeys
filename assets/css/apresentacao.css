@@ -41,16 +41,12 @@ header{
     z-index: 2;
 }
 
-.cards{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-
 /* === TAGS DO CORPO === */
 main{
     background-color: #2e2c2c;
     padding: 100px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .navbar a{

@@ -5,25 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
     <title>Página Inicial</title>
 </head>
 <body>
-    <header>
-        <h1>Arctic Monkeys</h1>
-    </header>
+    <header class="flex-row-space-between">
+      <h1 class="logo" id="logo">Arctic Monkeys</h1>
 
-    <main>
-      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./tela_apresentacao.html">Apresentação</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./tela_historia.html">História</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Membros
@@ -36,13 +28,30 @@
                   <li><a class="dropdown-item" href="#">Matthew Helders</a></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tela_apresentacao.html">Apresentação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tela_historia.html">História</a>
+              </li>
+              <li>
+                <p class="nav-link" onclick="alert()">Turnês</p>
+              </li>
             </ul>
           </div>
         </div>
-      </nav>          
+      </nav>
+    </header>
+
+    <main>
+
+      <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Erro!</strong> Esta página encontra-se indisponível no momento.
+        <button type="button" class="btn-close" onclick="closeAlert()"></button>
+      </div>
 
         <!-- CARROSSEL -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel" width="100px">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
             <!-- INDICADORES -->
             <div class="carousel-indicators">
@@ -75,23 +84,47 @@
     </main>
 
     <footer>
-      <div class="fcolunas">
-        <div class="btn-group" role="group" aria-label="Exemplo de grupo de botões">
+      <div class="fcolunas flex-row-space-around">
+        <div class="fontes">
             <h5>Fontes</h5>
-            <a href="https://pt.wikipedia.org/wiki/Arctic_Monkeys#" class="btn btn-secondary">Wikipedia</a>
-            <a href="https://images.google.com/" class="btn btn-secondary">Google Imagens</a>
-            <a href="https://www.youtube.com/" class="btn btn-secondary">Youtube</a>
+
+            <div class="btn-group">
+              <a href="https://pt.wikipedia.org/wiki/Arctic_Monkeys#" class="btn btn-secondary">Wikipedia</a>
+              <a href="https://images.google.com/" class="btn btn-secondary">Google Imagens</a>
+              <a href="https://www.youtube.com/" class="btn btn-secondary">Youtube</a>
+            </div>
         </div>
-        <div class="btn-group" role="group" aria-label="Exemplo de grupo de botões">
+
+        <div class="copy">
+          <p>&copy;2023.2 IFRN - Info. Subsequênte</p>
+          <p>&copy; 2023.2 IFRN - Autoria Web</p>
+        </div>
+        
+        <div class="integrantes">
             <h5>Integrantes</h5>
-            <a href="https://www.instagram.com/derickcarvalhoo/" class="btn btn-secondary">Derick Jesiel</a>
-            <a href="https://www.instagram.com/ehls_/" class="btn btn-secondary">Emanoel Heron</a>
-            <a href="https://www.instagram.com/pedro_1henrique_soares/" class="btn btn-secondary">Pedro Henrique</a>
+            <div class="btn-group">
+              <a href="https://www.instagram.com/derickcarvalhoo/" class="btn btn-secondary">Derick Jesiel</a>
+              <a href="https://www.instagram.com/ehls_/" class="btn btn-secondary">Emanoel Heron</a>
+              <a href="https://www.instagram.com/pedro_1henrique_soares/" class="btn btn-secondary">Pedro Henrique</a>
+            </div>
         </div>
       </div>
     </footer>   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script>
+
+      var alertDiv = document.getElementById('alert');
+
+      function alert() {
+        alertDiv.style.display = 'block';
+      }
+
+      function closeAlert() {
+        alertDiv.style.display = 'none';
+      }
+    </script>
 </body>
 </html>
 

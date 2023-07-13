@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,500&display=swap');
+
+/* ESTRUTURA GERAL DA PÁGINA */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TAGS DE USO GERAL */
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TAGS CABEÇALHO */
+
+header{
+    background-color: #111111;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.header h1 {
+    cursor: pointer;
+}
+
+/* === TAGS DO CORPO === */
+
+main{
+    background-color: #2e2c2c;
+    padding: 100px 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card-button {
+    margin: 10px;
+}
+
+.btn{
+    background-color: #2e2c2c;
+}
+
+/* TAGS DO RODAPÉ */
+
+footer{
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}

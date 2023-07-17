@@ -41,6 +41,10 @@ header{
     z-index: 2;
 }
 
+header h1 {
+    cursor: pointer;
+}
+
 /* === TAGS DO CORPO === */
 main{
     background-color: #2e2c2c;
@@ -60,6 +64,20 @@ main{
     padding: 70px 0;
 }
 
+.colapse-btn {
+    padding: 5px;
+    background: #111111;
+    border: 1px solid #585858;
+    border-radius: 10px;
+    color: #FFFFFF;
+    transition: linear transform 0.1s;
+}
+
+.colapse-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 #demo h1{
     padding: 0 0 50px;
     text-align: center;
@@ -73,6 +91,10 @@ footer{
     color: #ffffff;
     text-align: center;
     padding: 30px;
+}
+
+.btn {
+    background-color: #2e2c2c;
 }
 
 .copy {

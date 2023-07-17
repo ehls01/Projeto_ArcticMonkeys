@@ -29,6 +29,13 @@
     align-items: center;
 }
 
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* TAGS CABEÇALHO */
 
 header{
@@ -88,6 +95,28 @@ ul li a{
 .integrantes{
     color: #ffffff;
     text-align: center;
+}
+
+.contact {
+    padding: 20px 0;
+}
+
+.contact h1 {
+    color: #ffffff;
+}
+
+.form-control, .input-group span {
+    border: 1px solid #111111;
+}
+
+.input-group span {
+    background: #3e3e3e;
+    color: #FFFFFF;
+}
+
+.inputs {
+    padding: 20px 0;
+    width: 50%;
 }
 
 .btn{

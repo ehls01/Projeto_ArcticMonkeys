@@ -10,8 +10,9 @@
 </head>
 <body>
     <header class="flex-row-space-between">
-      <h1 onclick="homePage()" class="logo" id="logo">Arctic Monkeys</h1>
+      <h1 onclick="homePage()">Arctic Monkeys</h1>
 
+      <!-- BARRA DE NAVEGAÇÃO -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -20,6 +21,8 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Membros
                 </a>
+
+                <!-- DROPDOWN -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="tela_membros.html">Formação atual</a></li>
                   <li><a class="dropdown-item" href="antigos_membros.html">Antigos membros</a></li>
@@ -41,6 +44,8 @@
     </header>
 
     <main>
+
+      <!-- ALERTA -->
       <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Erro!</strong> Esta página encontra-se indisponível no momento.
         <button type="button" class="btn-close" onclick="closeAlert()"></button>
@@ -84,6 +89,9 @@
             <h1>Para receber atualizações: </h1>
   
             <div class="inputs flex-column-center">
+
+              <!-- GRUPOS DE INPUT -->
+
               <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
@@ -99,6 +107,7 @@
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
               </div>
     
+              <!-- BOTÃO -->
               <button class="btn btn-dark">
                 Enviar
               </button>
@@ -112,11 +121,12 @@
         <div class="fontes">
             <h5>Fontes</h5>
 
-            <div class="btn-group">
-              <a href="https://pt.wikipedia.org/wiki/Arctic_Monkeys#" class="btn btn-secondary">Wikipedia</a>
-              <a href="https://images.google.com/" class="btn btn-secondary">Google Imagens</a>
-              <a href="https://www.youtube.com/" class="btn btn-secondary">Youtube</a>
-            </div>
+            <!-- NAV -->
+            <nav class="nav">
+              <a class="nav-link active" aria-current="page" href="https://pt.wikipedia.org/wiki/Arctic_Monkeys">Wikipedia</a>
+              <a class="nav-link" href="https://images.google.com/">Google Images</a>
+              <a class="nav-link" href="https://www.youtube.com/">YouTube</a>
+            </nav>
         </div>
 
         <div class="copy">
@@ -126,6 +136,8 @@
         
         <div class="integrantes">
             <h5>Integrantes</h5>
+
+            <!-- GRUPOS DE BOTÕES -->
             <div class="btn-group">
               <a href="https://www.instagram.com/derickcarvalhoo/" class="btn btn-secondary">Derick Jesiel</a>
               <a href="https://www.instagram.com/ehls_/" class="btn btn-secondary">Emanoel Heron</a>
@@ -156,15 +168,6 @@
 </html>
 
 <!-- 
-Alertas •
-Botões •
-Grupos de botões •
-Card •
-Carousel •
-Collapse •
-Dropdowns • 
-Formulários 
-Grupos de input 
-Navs 
-Barras de navegação •
+• Formulários
+• Navs
 -->

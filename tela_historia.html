@@ -9,10 +9,33 @@
     <title>História da Banda</title>
 </head>
 <body>
-    <header class="flex-row-space-between">
-        <h1 onclick="homePage()">Arctic Monkeys</h1>
-        <h3>História da Banda</h3>
-    </header>
+  <header class="flex-row-space-between">
+    <h1 onclick="homePage()" class="logo" id="logo">Arctic Monkeys</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Membros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="tela_membros.html">Formação atual</a></li>
+                <li><a class="dropdown-item" href="antigos_membros.html">Antigos membros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tela_apresentacao.html">Apresentação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tela_historia.html">História</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <main class="flex-column-center">
 
@@ -66,9 +89,11 @@
                 primeira semana foi fechada como 363.735 cópias.
             </p>
 
+
+            <!-- COLLAPSE -->
             <button class="colapse-btn" data-bs-toggle="collapse" data-bs-target="#demo">Mais Informações</button>
     
-            <div id="demo" class="collapse">
+            <div id="demo" class="edit-collapse collapse">
 
                 <p>
                     Sem deixar a poeira baixar, em abril de 2006 lançaram um EP com cinco faixas, Who the Fuck Are Arctic Monkeys?. 
@@ -183,19 +208,16 @@
     </main>
 
     <footer>
-        <!-- <div class="fcolunas">
-            <a class="btn btn-dark" href="./tela_inicial.html">Página inicial</a>
-        </div> -->
-
         <div class="fcolunas flex-row-space-around">
             <div class="fontes">
                 <h5>Fontes</h5>
     
-                <div class="btn-group">
-                  <a href="https://pt.wikipedia.org/wiki/Arctic_Monkeys#" class="btn btn-secondary">Wikipedia</a>
-                  <a href="https://images.google.com/" class="btn btn-secondary">Google Imagens</a>
-                  <a href="https://www.youtube.com/" class="btn btn-secondary">Youtube</a>
-                </div>
+                <!-- NAV -->
+                <nav class="nav">
+                  <a class="nav-link active" aria-current="page" href="https://pt.wikipedia.org/wiki/Arctic_Monkeys">Wikipedia</a>
+                  <a class="nav-link" href="https://images.google.com/">Google Images</a>
+                  <a class="nav-link" href="https://www.youtube.com/">YouTube</a>
+                </nav>
             </div>
     
             <div class="copy">

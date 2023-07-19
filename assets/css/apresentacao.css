@@ -29,6 +29,13 @@
     align-items: center;
 }
 
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* TAGS CABEÇALHO */
 
 header{
@@ -45,11 +52,26 @@ header h1 {
     cursor: pointer;
 }
 
-.cards{
+.navbar a, .navbar p{
+    color: #ffffff;
+    font-size: 20px;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    align-items: center;
+    cursor: pointer;
 }
+
+.dropdown-menu{
+    background-color: #2e2c2c;
+    color: #ffffff;
+}
+
+ul li{
+    padding: 5px;
+}
+ul li a{
+    color: #2e2c2c;
+}
+
 
 /* === TAGS DO CORPO === */
 main{
@@ -66,7 +88,7 @@ main{
     
 }
 
-.collapse{
+.edit-collapse{
     padding: 70px 0;
 }
 

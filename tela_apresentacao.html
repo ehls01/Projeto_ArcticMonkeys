@@ -9,13 +9,35 @@
     <title>Apresentação da Banda</title>
 </head>
 <body>
-    <header class="flex-row-space-between">
-        <h1 onclick="homePage()">Arctic Monkeys</h1>  
-        <h3>Apresentação da Banda</h3>
-    </header>
+  <header class="flex-row-space-between">
+    <h1 onclick="homePage()" class="logo" id="logo">Arctic Monkeys</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Membros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="tela_membros.html">Formação atual</a></li>
+                <li><a class="dropdown-item" href="antigos_membros.html">Antigos membros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tela_apresentacao.html">Apresentação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tela_historia.html">História</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <main>
-
         <div class="decricao">
             <div class="fotoBanda">
                 <img src="./assets/imgs/banda.webp" alt="foto da banda">
@@ -28,7 +50,7 @@
 
         <button class="colapse-btn" data-bs-toggle="collapse" data-bs-target="#demo">Mais Informações</button>
 
-        <div id="demo" class="collapse">
+        <div id="demo" class="edit-collapse collapse">
             <h1>Influencias</h1>
             <p>A banda cita como influência grupos como Oasis, The Strokes e Queens of the Stone Age. Em entrevista para a Pitchfork, Alex Turner diz ter impersonado o Oasis em apresentações na escola, juntamente com Matt Helders. "Matt e alguns amigos colocaram (What's the Story) Morning Glory? e nós 'tocamos' com raquetes de tênis, fingindo ser o Oasis." Ainda sobre o Oasis, Turner diz que "com eles, é a atitude, como se resistissem contra todas as outras coisas que acontecem no mundo da música. Não sei se dá pra entender isso completamente... é como um impulso, certo? Principalmente quando se é tão jovem, você não raciocina, apenas pensa "isso é demais".</p>
             <p>Sobre os Strokes, Turner afirma que a banda o fez mudar completamente sua perspectiva das coisas, e foi responsável por introduzi-los a vários outros artistas. O Arctic Monkeys também fazia muitos covers dos Strokes durante o início de sua carreira.</p>
@@ -45,11 +67,12 @@
             <div class="fontes">
                 <h5>Fontes</h5>
     
-                <div class="btn-group">
-                  <a href="https://pt.wikipedia.org/wiki/Arctic_Monkeys#" class="btn btn-secondary">Wikipedia</a>
-                  <a href="https://images.google.com/" class="btn btn-secondary">Google Imagens</a>
-                  <a href="https://www.youtube.com/" class="btn btn-secondary">Youtube</a>
-                </div>
+                <!-- NAV -->
+                <nav class="nav">
+                  <a class="nav-link active" aria-current="page" href="https://pt.wikipedia.org/wiki/Arctic_Monkeys">Wikipedia</a>
+                  <a class="nav-link" href="https://images.google.com/">Google Images</a>
+                  <a class="nav-link" href="https://www.youtube.com/">YouTube</a>
+                </nav>
             </div>
     
             <div class="copy">
